@@ -5,6 +5,9 @@
 .yoga-photo{
   animation:2s inicio 1;
 }
+.icon{
+  filter: invert(95%) sepia(51%) saturate(6897%) hue-rotate(290deg) brightness(87%) contrast(105%);
+}
 
 @keyframes inicio {
   0% {
@@ -14,4 +17,50 @@
     opacity:1
  
   }
+}
+
+.right{
+  animation:2s card-right 1;
+}
+.left{
+  animation:2s card-left 1;
+}
+
+@keyframes card-right {
+  0% {
+    transform:translateX(200px);
+    opacity:0;
+  }
+  100% {
+    transform:translateX(0px);
+    opacity:1;
+ 
+  }
+}
+@keyframes card-left {
+  0% {
+    transform:translateX(-200px);
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+    transform:translateX(0px);
+   
+  }
+}
+.img-right{
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: card-right;
+  animation-range:entry 25% cover 30%;
+  animation-fill-mode:both;
+}
+.img-left{
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: card-left;
+  animation-range:entry 25% cover 30%;
+  animation-fill-mode:both;
 }
