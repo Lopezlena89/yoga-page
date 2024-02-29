@@ -19,48 +19,148 @@
   }
 }
 
-.right{
-  animation:2s card-right 1;
+
+.flower1{
+  animation:2s flower1 1;
+  
 }
-.left{
-  animation:2s card-left 1;
+.flower2{
+  animation:2s flower2 1;
+  
+}
+.flower3{
+  animation:2s flower3 1;
+  
+}
+.flower4{
+  animation:2s flower4 1;
+ 
+}
+.rounded-text{
+  animation:2s rounded 1;
+ 
+}
+.in-out{
+  animation:2s inout 1;
+ 
 }
 
-@keyframes card-right {
+
+@keyframes inout {
   0% {
-    transform:translateX(200px);
     opacity:0;
+    transform: scale(0);
+    
   }
   100% {
-    transform:translateX(0px);
     opacity:1;
+    transform: scale(1);
  
   }
 }
-@keyframes card-left {
+@keyframes rounded {
   0% {
-    transform:translateX(-200px);
     opacity:0;
+    transform: translateY(40px);
+    
   }
   100% {
     opacity:1;
-    transform:translateX(0px);
-   
+    transform: translateY(0px);
+ 
   }
 }
-.img-right{
+@keyframes flower1 {
+  0% {
+    transform:rotate(0deg);
+    
+  }
+  100% {
+    transform:rotate(25deg) translateX(40px) translateY(-20px);
+   
+ 
+  }
+}
+@keyframes flower2 {
+  0% {
+    transform:rotate(0deg);
+    
+  }
+  100% {
+    transform:rotate(50deg) translateX(70px) translateY(-50px);
+   
+ 
+  }
+}
+@keyframes flower3 {
+  0% {
+    transform:rotate(0deg);
+    
+  }
+  100% {
+    transform:rotate(-25deg) translateX(-40px) translateY(-20px);
+
+ 
+  }
+}
+@keyframes flower4 {
+  0% {
+    transform:rotate(0deg);
+    
+  }
+  100% {
+    transform:rotate(-55deg) translateX(-70px) translateY(-50px);
+   
+ 
+  }
+}
+
+.in-out{
   view-timeline-name: --image;
   view-timeline-axis: block;
   animation-timeline: --image;
-  animation-name: card-right;
-  animation-range:entry 25% cover 30%;
+  animation-name: inout;
+  animation-range:entry 40% cover 60%;
   animation-fill-mode:both;
 }
-.img-left{
+.rounded-text{
   view-timeline-name: --image;
   view-timeline-axis: block;
   animation-timeline: --image;
-  animation-name: card-left;
-  animation-range:entry 25% cover 30%;
+  animation-name: rounded;
+  animation-range:entry 40% cover 60%;
   animation-fill-mode:both;
 }
+.img-flower1{
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: flower1;
+  animation-range:entry 40% cover 60%;
+  animation-fill-mode:both;
+}
+.img-flower2{
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: flower2;
+  animation-range:entry 40% cover 60%;
+  animation-fill-mode:both;
+}
+.img-flower3{
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: flower3;
+  animation-range:entry 40% cover 60%;
+  animation-fill-mode:both;
+}
+.img-flower4{
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: flower4;
+  animation-range:entry 40% cover 60%;
+  animation-fill-mode:both;
+}
+
