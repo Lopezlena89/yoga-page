@@ -2,7 +2,7 @@
 export const Trainer = () => {
   return (
     <>
-        <section className="w-screen h-auto  bg-orange-200 flex flex-col items-center justify-start pt-10">
+        <section id="trainer" className="w-screen h-auto  bg-orange-200 flex flex-col items-center justify-start pt-10">
             <div className="w-[50%] h-[200px] flex flex-col justify-center items-center">
                 <h2 className="font-thin text-amber-600 text-2xl">Our trainer</h2>
                 <p className="font-medium text-center text-amber-800 text-5xl mt-5">Meet the experts</p>

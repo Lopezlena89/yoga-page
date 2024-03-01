@@ -4,7 +4,7 @@ import Image from "next/image"
 export const Services = () => {
   return (
     <>
-        <section className="w-full h-auto flex flex-col bg-orange-200 items-center">
+        <section id="services" className="w-full h-auto flex flex-col bg-orange-200 items-center">
           <div className="w-[70%] h-[250px] flex flex-col justify-center items-center">
               <h2 className="font-thin text-amber-600 text-xl md:text-2xl">Services</h2>
               <p className="font-medium text-center text-amber-800 text-2xl md:text-5xl mt-5">What we offer to you</p>

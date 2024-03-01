@@ -4,7 +4,7 @@ import React from 'react'
 export const Instalaciones = () => {
   return (
     <>
-        <section id="salones" className='w-full h-auto md:h-[600px] flex flex-col bg-orange-200'>
+        <section id="about" className='w-full h-auto md:h-[600px] flex flex-col bg-orange-200'>
             <div className='w-full h-[80%] flex flex-col justify-center items-center md:flex-row '>
               
               <div className='w-1/2 h-full flex justify-center items-center mx-5'>
